@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Harvard Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="harvard-header">
+    <h1>Harvard University</h1>
+    <p><em>"Veritas" – Truth</em></p>
+    <p>Renowned for its academic excellence, extensive research, and prestigious alumni network.
+         It's one of the oldest and most selective universities in the United States, known for 
+         its strong programs in various fields, including humanities, social sciences, and sciences.</p>
+  </header>
+
+  <main class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <div class="error" id="nameError"></div>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <div class="error" id="emailError"></div>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      <div class="error" id="messageError"></div>
+
+      <button type="submit">Submit</button>
+      <div class="success" id="successMessage"></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Harvard University. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
